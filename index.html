@@ -1,8 +1,85 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-    </body>
+	<head>
+		<title>ne0nsw0rd</title>
+
+		<style type="text/css">
+			body {
+				font-family: monospace;
+				background-color: black;
+				text-align: center;
+				color: white;
+			}
+			#H { font-size: 16vw }
+		</style>
+	</head>
+
+	<body>
+
+	 	<div id="H">ne0nsw0rd</div>
+		<script>
+			let x = "ne0nsw0rd".split('')
+			let y = "123456789".split('')
+			let z = "abcfghijklmoptuvxyz".split('')
+			var t = 0
+			
+			window.setInterval(function() {
+				var s = "";
+				for (i = 0; i < 9; i++) {
+					if (Math.random() < (Math.sin(t) + 1) / 2)
+						s += x[i];
+					else if (i == 2 || i == 6)
+						s += y[Math.floor(Math.random() * y.length)].fontcolor("gray");
+					else
+						s += z[Math.floor(Math.random() * z.length)].fontcolor("gray");
+				}
+				t = (t + 0.02) % (Math.PI * 2);
+				document.getElementById("H").innerHTML = s
+			}, 50);
+		</script>
+		
+		<iframe
+			src="https://player.vimeo.com/video/460501749?color=ffffff&title=0&byline=0&portrait=0" 
+			width="640" 
+			height="360" 
+			frameborder="0" 
+			allow="autoplay; fullscreen"
+			allowfullscreen>
+		</iframe>
+
+		<div style="height:100px;"></div>
+
+		<iframe
+			width="640px" 
+			height="300" 
+			scrolling="no" 
+			frameborder="no" 
+			allow="autoplay" 
+			src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/758181439&color=%23fbbbf9&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+		</iframe>
+
+		<div style="height:100px;"></div>
+
+		<iframe 
+			src="https://player.vimeo.com/video/365001555?color=ffffff&title=0&byline=0&portrait=0" 
+			width="640" 
+			height="360" 
+			frameborder="0" 
+			allow="autoplay; fullscreen" 
+			allowfullscreen>
+		</iframe>
+
+
+
+
+		<div style="position:fixed;bottom:0;right:0;margin:16px">
+			<a href="https://www.instagram.com/ne0nsw0rd.xyz">
+				<img style="margin:16px" src="Instagram.png">
+			</a>
+			<a href="https://www.soundcloud.com/ne0nsw0rd">
+				<img style="margin:16px" src="Soundcloud.png">
+			</a>
+		</div>
+
+	</body>
 </html>
